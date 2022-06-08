@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 76, 251);
+}
+
+.container{
+    width: 90%;
+    height: 90vh;
+    background-color: rgb(135, 37, 227);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 100px 10px 100px 100px;
+    display: flex;
+    z-index: 2;
+
+}
+
+.forms-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(227, 186, 125);
+    padding: 1rem;
+    border-radius:100px 10px 10px 100px;
+}
+
+.forms-image img{
+    width: 90%;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+}
+
+.login-button button{
+    margin: 20px;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(227, 186, 125);
+}
+
+.login-button button:hover{
+    
+    background-color: rgb(228, 195, 145);
+}
+
+.login-button button a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(135, 37, 227);
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 6rem;
+    height: 4px;
+    background-color: rgb(227, 186, 125);
+    margin: 0 auto;
+    position:absolute;
+    border-radius:10px;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 15px;
+    box-shadow:1px 1px 6px #0000001c;
+}
+
+.input-box input:hover{
+    background-color: rgb(228, 195, 145);
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid rgb(135, 37, 227);
+}
+
+.input-box label, .gender-title h6{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.input-box input:placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gender-input{
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input{
+    margin-right: 0.81rem;
+}
+
+.gender-input label{
+    font-size:1rem;
+    font-weight: 600;
+    margin-right: 0.81rem;
+    color: #fff;
+}
+
+.continue-button{
+    display: flex;
+    align-items: center;
+}
+
+.continue-button button{
+    width: 100%;
+    margin: 80px 10px;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(227, 186, 125);
+}
+
+.continue-button button:hover{
+    
+    background-color: rgb(228, 195, 145);
+}
+
+.continue-button button a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(135, 37, 227);
+}
+
+@media screen and (max-width: 1440px){
+    .title h1{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 1170px){
+    .title h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1330px){
+    .forms-image{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1065px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 20rem;
+    }
+    .gender-inputs{
+        margin-top: 2rem;
+    }
+    .gender-group{
+        flex-direction: column;
+    }
+    .gender-input{
+        margin-top: 0.5rem;
+    }
+}
+
+
